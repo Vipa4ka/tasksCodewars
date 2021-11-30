@@ -1,1 +1,1 @@
-# tasksCodewars-
+# tasksCodewars
