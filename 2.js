@@ -1,13 +1,41 @@
 function findEvenIndex(arr)
 {
+    // console.log()
 
+    const first = arr.indexOf(0)+1,
+        last = arr.lastIndexOf(0);
+
+    console.log(first)
+    console.log(last)
+    console.log(last-first)
+  return arr.splice(first, last-first).reduce((a, b)=>a+b, 0)
+//     let sum = 0;
+//     let n = 0;
+//     let a = 0;
+
+// arr.forEach(function(elem, index, ar) {
+//     // sum += elem;
+    
+//     // элемент
+//     a = ar[n]
+//     console.log(a)
+//     // сумма элементов
+//     sum += a
+//     console.log(sum)
+//     let v = sum + a
+    
+//     // console.log(v) 
+//     n += 1
+
+    
+// });
 
 }
 
 
+console.log(findEvenIndex([1, 3, 5, 2, 10]));
 
-
-console.log(findEvenIndex([1, 2, 3, 4, 3, 2, 1]));
+// console.log(findEvenIndex([1, 2, 3, 4, 3, 2, 1]));
 
 
 
