@@ -1,20 +1,28 @@
-function solution(str, ending) {    
-    let n = 0;
-    const result1 = str.split('').reverse().join('');    
+function solution(str, ending) {
+    const result1 = str.split('').reverse().join('');
     const result2 = ending.split('').reverse().join('');
-    if (n < ending.length) {
-        for (var i = 0; i < str.length; i++) {
-            return(result2[i] === result1[i]) ? true : false;
-        //    const answer= (result2[n] === result1[n] && result2[n + 1] === result1[n + 1]) ? true : false;
-            n += 1
-            
+    let i = 0
+    if (result2.length === 0 || result1.length === 0) {
+        return true
+    } else {
+        while (i < ending.length - 1) {
+            const o =(result2[i] === result1[i]) ? true : false;             
+            if (o === false) {
+                break;
+            }
+            i += 1;
         };
-        return 
+        return (result2[i] === result1[i]) ? true : false;
     };
 };
 
 
+// 2 способ
+// const solution = (str, ending) => str.endsWith(ending);
 
+
+console.log(solution(  ':-)',   ':-(')  )
+console.log(solution('abc', ''))
 console.log(solution('abc', 'bc'))
 console.log(solution('abc', 'd'))
 console.log(solution('sumo', 'omo'))
