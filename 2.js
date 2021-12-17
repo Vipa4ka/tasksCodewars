@@ -1,3 +1,5 @@
+
+
 function findEvenIndex(arr) {
     let n = 0;
     // сумма всего массива
