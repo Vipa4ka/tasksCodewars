@@ -16,7 +16,6 @@ function solution(str, ending) {
     };
 };
 
-
 // 2 способ
 // const solution = (str, ending) => str.endsWith(ending);
 
